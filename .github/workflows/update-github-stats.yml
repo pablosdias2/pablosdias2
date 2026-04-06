@@ -14,11 +14,15 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
-      - name: Fetch GitHub README Stats SVGs
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Generate GitHub stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p assets
-          curl -sS 'https://github-readme-stats.vercel.app/api?username=pablosdias2&show_icons=true&theme=dracula' -o assets/github-stats.svg || true
-          curl -sS 'https://github-readme-stats.vercel.app/api/top-langs/?username=pablosdias2&layout=compact&theme=dracula' -o assets/top-langs.svg || true
+          python scripts/generate_github_stats.py --username pablosdias2 --outdir assets
       - name: Commit and push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
