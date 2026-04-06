@@ -18,6 +18,7 @@
 ![Airflow](https://img.shields.io/badge/-Airflow-017CEE?logo=apache-airflow&logoColor=white&style=flat)
 ![GCP](https://img.shields.io/badge/-GCP-4285F4?logo=googlecloud&logoColor=white&style=flat)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat)
+![dbt](https://img.shields.io/badge/-dbt-FF7F50?logo=dbt&logoColor=white&style=flat)
 
 ---
 
@@ -30,8 +31,8 @@
 ---
 
 ## 📊 Estatísticas do GitHub
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pablosdias2&show_icons=true&theme=dracula)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pablosdias2&layout=compact&theme=dracula)
+![GitHub Stats](assets/github-stats.svg)
+![Top Langs](assets/top-langs.svg)
 
 ---
 
